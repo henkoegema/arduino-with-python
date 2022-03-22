@@ -1,3 +1,6 @@
+#Created by Ian Neill 02-21-2022
+#Reference to:  https://www.youtube.com/watch?v=h1DCbOOPD_k&t=3s
+
 from dataclasses import dataclass
 from vpython import *
 import numpy as np
@@ -129,17 +132,17 @@ while True:
         m1.update(value1)
         value2 = mapThis(data[1],0,1023,4/5*pi,1/5*pi)
         rpm = mapThis(data[1],0,1023,200,1200)
-        # m2.update(value2)
-        # value3 = mapThis(data[2],0,1023,4/5*pi,1/5*pi)
-        # volts = mapThis(data[2],0,1023,0,500)
-        # m3.update(value3)
+         m2.update(value2)
+         value3 = mapThis(data[2],0,1023,4/5*pi,1/5*pi)
+         volts = mapThis(data[2],0,1023,0,500)
+         m3.update(value3)
 
         ##### Calculate Temperature #####
-        # systemNet = ((volts * amps * efficiency) / 5000) - ((gpm * rpm)/5000)
-        # therm += systemNet /10
-        # therm = min(19, max(3, therm))
-        # thermReading.axis.y = therm
-        # ss.text = str(round(systemNet,2))
+         systemNet = ((volts * amps * efficiency) / 5000) - ((gpm * rpm)/5000)
+         therm += systemNet /10
+         therm = min(19, max(3, therm))
+         thermReading.axis.y = therm
+         ss.text = str(round(systemNet,2))
         
 
 
