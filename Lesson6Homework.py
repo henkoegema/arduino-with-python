@@ -54,7 +54,7 @@ extrusion(path=[vector(0,0,0),vector(0,27,0)],color=[color.red,color.blue],shape
 ########## Piping ##########
 cylinder(pos=vector(0,27,-25),radius=1,axis=vector(0,0,30),color=color.blue)
 cylinder(pos=vector(0,0,-25),radius=1,axis=vector(0,0,32),color=color.red)
-cylinder(pos=vector(1,0,7),radius=1,axis=vector(-65,0,0),color=color.blue)
+cylinder(pos=vector(1,0,7),radius=1,axis=vector(-65,0,0),color=color.red)
 cylinder(pos=vector(-70,42,-2),radius=1,axis=vector(0,0,10),color=color.red)
 cylinder(pos=vector(-70,42,7),radius=1,axis=vector(0,-30,0),color=color.red)
 cylinder(pos=vector(-71,12,7),radius=1,axis=vector(7,0,0),color=color.red)
