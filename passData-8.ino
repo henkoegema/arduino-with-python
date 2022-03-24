@@ -30,10 +30,6 @@ void loop() {
   greenVal = Serial.readStringUntil(':').toInt();
   blueVal = Serial.readStringUntil('\r').toInt();
 
-Serial.println(redVal);
-Serial.println(greenVal);
-Serial.println(blueVal);
-
   analogWrite(redPin, 255 - redVal);
   analogWrite(greenPin, 255 - greenVal);
   analogWrite(bluePin, 255 - blueVal);
